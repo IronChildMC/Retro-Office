@@ -3,38 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <title>Retro Office</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f3f2f1;
+    }
+
+    .header {
+      background: white;
+      padding: 15px 30px;
+      font-size: 20px;
+      font-weight: 600;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: all 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
+    .card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .card-sub {
+      font-size: 13px;
+      color: #666;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
 
-<div class="desktop">
-
-  <div class="icon" ondblclick="openApp('slides')">
-    <img src="slides.svg">
-    <span>Retro Slides</span>
-  </div>
-
-  <div class="icon" ondblclick="openApp('sheets')">
-    <img src="spreadsheet.svg">
-    <span>Retro Sheets</span>
-  </div>
-
-  <div class="icon" ondblclick="openApp('design')">
-    <img src="design.svg">
-    <span>Retro Design</span>
-  </div>
-
-  <div class="icon" ondblclick="openApp('write')">
-    <img src="write.svg">
-    <span>Retro Write</span>
-  </div>
-
+<div class="header">
+  Retro Office
 </div>
 
-<div class="taskbar">
-  <span>🟦 Retro Office</span>
+<div class="container">
+  <div class="grid">
+
+    <a class="card" href="https://minimal-slides-1.preview.emergentagent.com" target="_blank">
+      <img src="slides.svg">
+      <div class="card-title">Slides</div>
+      <div class="card-sub">Presentaciones</div>
+    </a>
+
+    <a class="card" href="https://vector-spreadsheet.preview.emergentagent.com" target="_blank">
+      <img src="spreadsheet.svg">
+      <div class="card-title">Sheets</div>
+      <div class="card-sub">Hojas de cálculo</div>
+    </a>
+
+    <a class="card" href="https://design-studio-1025.preview.emergentagent.com" target="_blank">
+      <img src="design.svg">
+      <div class="card-title">Design</div>
+      <div class="card-sub">Diseño gráfico</div>
+    </a>
+
+    <a class="card" href="https://write-studio-3.preview.emergentagent.com" target="_blank">
+      <img src="write.svg">
+      <div class="card-title">Write</div>
+      <div class="card-sub">Documentos</div>
+    </a>
+
+  </div>
 </div>
 
-<script src="script.js"></script>
 </body>
 </html>
