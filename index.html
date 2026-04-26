@@ -3,101 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <title>Retro Office</title>
+
   <style>
     body {
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
-      background: #f3f2f1;
+      background: #1b1b1b;
+      color: white;
     }
 
-    .header {
-      background: white;
-      padding: 15px 30px;
-      font-size: 20px;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+
+    .logo img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .logo h1 {
+      font-size: 32px;
       font-weight: 600;
-      border-bottom: 1px solid #ddd;
+      margin: 0;
     }
 
     .container {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      width: 100%;
+      max-width: 1000px;
+      padding: 40px;
+      background: #252526;
+      border-radius: 15px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.5);
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
     }
 
     .card {
-      background: white;
-      border-radius: 10px;
-      padding: 25px;
+      background: #2d2d30;
+      border-radius: 12px;
+      padding: 30px;
       text-align: center;
       text-decoration: none;
-      color: black;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      color: white;
       transition: all 0.2s ease;
+      border: 1px solid transparent;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+      transform: translateY(-6px);
+      border: 1px solid #3aa0ff;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
     }
 
     .card img {
-      width: 60px;
-      height: 60px;
+      width: 70px;
+      height: 70px;
       margin-bottom: 15px;
     }
 
     .card-title {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 600;
     }
 
     .card-sub {
       font-size: 13px;
-      color: #666;
+      color: #aaa;
       margin-top: 5px;
     }
+
   </style>
+   <link rel="icon" type="image/x-icon" href="logo.ico">
 </head>
 <body>
 
-<div class="header">
-  Retro Office
-</div>
+<div class="wrapper">
 
-<div class="container">
-  <div class="grid">
-
-    <a class="card" href="https://minimal-slides-1.preview.emergentagent.com" target="_blank">
-      <img src="slides.svg">
-      <div class="card-title">Slides</div>
-      <div class="card-sub">Presentaciones</div>
-    </a>
-
-    <a class="card" href="https://vector-spreadsheet.preview.emergentagent.com" target="_blank">
-      <img src="spreadsheet.svg">
-      <div class="card-title">Sheets</div>
-      <div class="card-sub">Hojas de cálculo</div>
-    </a>
-
-    <a class="card" href="https://design-studio-1025.preview.emergentagent.com" target="_blank">
-      <img src="design.svg">
-      <div class="card-title">Design</div>
-      <div class="card-sub">Diseño gráfico</div>
-    </a>
-
-    <a class="card" href="https://write-studio-3.preview.emergentagent.com" target="_blank">
-      <img src="write.svg">
-      <div class="card-title">Write</div>
-      <div class="card-sub">Documentos</div>
-    </a>
-
+  <div class="logo">
+    <img src="logo.png">
+    <h1>Retro Office</h1>
   </div>
+
+  <div class="container">
+    <div class="grid">
+
+      <a class="card" href="https://minimal-slides-1.preview.emergentagent.com" target="_blank">
+        <img src="slides.svg">
+        <div class="card-title">Slides</div>
+        <div class="card-sub">Presentaciones</div>
+      </a>
+
+      <a class="card" href="https://vector-spreadsheet.preview.emergentagent.com" target="_blank">
+        <img src="spreadsheet.svg">
+        <div class="card-title">Sheets</div>
+        <div class="card-sub">Hojas de cálculo</div>
+      </a>
+
+      <a class="card" href="https://design-studio-1025.preview.emergentagent.com" target="_blank">
+        <img src="design.svg">
+        <div class="card-title">Design</div>
+        <div class="card-sub">Diseño gráfico</div>
+      </a>
+
+      <a class="card" href="https://write-studio-3.preview.emergentagent.com" target="_blank">
+        <img src="write.svg">
+        <div class="card-title">Write</div>
+        <div class="card-sub">Documentos</div>
+      </a>
+
+    </div>
+  </div>
+
 </div>
 
 </body>
